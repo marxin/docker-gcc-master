@@ -1,5 +1,5 @@
 FROM opensuse/tumbleweed
-RUN zypper -n install binutils flex bison gcc-c++ gcc-32bit mpfr-devel gmp-devel mpc-devel make gdb valgrind strace git wget unzip
+RUN zypper -n install binutils flex bison gcc-c++ gcc-32bit mpfr-devel gmp-devel mpc-devel make gdb valgrind strace git wget unzip cvise
 RUN useradd -ms /bin/bash marxin
 USER marxin
 WORKDIR /home/marxin
