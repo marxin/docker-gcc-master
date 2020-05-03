@@ -9,4 +9,5 @@ WORKDIR gcc-master
 RUN mkdir objdir
 WORKDIR objdir
 RUN ../configure --disable-bootstrap --prefix=/home/marxin/bin/gcc
-RUN make -j4
+RUN make -j`nproc`
+RUN make install
